@@ -8,19 +8,21 @@
     <title>Budget Calculator</title>
 </head>
 <body>
-    <h2 id="result">Budget: </h2>
-    <table>
-        <thead>
-            <tr>
-                <td>Categories</td>
-                <td>Percentages</td>
-                <td>Amount</td>
-            </tr>
-        </thead>
-        <tbody>
+    <div class="container">
+        <h2 id="result">Budget</h2>
+        <table>
+            <thead>
+                <tr>
+                    <td>Categories</td>
+                    <td>Percentages</td>
+                    <td>Amount</td>
+                </tr>
+            </thead>
+            <tbody>
 
-        </tbody>
-    </table>
+            </tbody>
+        </table>
+    </div>
     <script>
         window.addEventListener("load", () => {
             var budget = JSON.parse(localStorage.getItem("budget"));
