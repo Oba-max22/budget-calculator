@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Budget Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+            <h1>Budget Calculator</h1>
+            <div class="form-area">
+                <label for="fullname">Fullname</label>
+                <input type="text" placeholder="Enter fullname here..." name="fullname" id="fullname">
+            </div>
+            <div class="form-area">
+                <label for="income">Monthly income</label>
+                <input type="number" placeholder="Enter income here..." name="income" id="income">
+            </div>
+            <div class="form-area">
+                <label for="age">Age</label>
+                <input type="number" placeholder="Enter age here..." name="age" id="age">
+            </div>
+            <div class="form-area">
+                <label for="gender">Gender</label>
+                <select name="gender" id="gender">
+                    <option value="Select gender">Select gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
+            <div class="form-area">
+                <label for="marital-status">Marital status</label>
+                <select name="marital-status" id="marital-status">
+                    <option value="Select status">Select status</option>
+                    <option value="single">Single</option>
+                    <option value="married">Married</option>
+                </select>
+            </div>
+            <div class="form-area">
+                <label for="number-of-dependents">Number of dependents</label>
+                <input type="number" placeholder="Enter no. of dependents..." name="number-of-dependents" id="number-of-dependents">
+            </div>
+            <div class="form-area">
+                <button onClick="calculateBudget(event)">submit</button>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
